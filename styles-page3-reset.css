@@ -1,0 +1,4 @@
+body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; }
+.toggle-bar { background: #fef7e0; border: 1px solid #f9ab00; padding: 10px; margin-bottom: 20px; }
+.content-demo { border: 1px dashed #999; padding: 15px; }
+p.description { background: #fce8e6; border-left: 4px solid #d93025; padding: 10px 15px; }

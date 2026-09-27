@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 2. div and span</title>
+  <link rel="stylesheet" href="styles-page2.css">
+</head>
+<body>
+  <h1>Task 2. Block and Inline Elements</h1>
+
+  <h2>Block divs</h2>
+  <p>Each <code>&lt;div&gt;</code> is a block element: it takes up the full width of
+     its container and starts on a new line, even if there is little content inside.</p>
+  <div class="block-item">First block (div)</div>
+  <div class="block-item">Second block (div)</div>
+  <div class="block-item">Third block (div)</div>
+
+  <h2>Inline spans</h2>
+  <p>
+    Here <span class="inline-item">span one</span>,
+    <span class="inline-item">span two</span> and
+    <span class="inline-item">span three</span>
+    sit next to each other on the same line, because <code>&lt;span&gt;</code> is an
+    inline element and does not break the line.
+  </p>
+
+  <h2>Div turned into inline</h2>
+  <p>If a block div is given <code>display: inline-block</code>, it behaves like an
+     inline element (sits in a row next to others) while keeping the ability to
+     set width/height and spacing like a block element.</p>
+  <div class="div-as-inline">div #1</div>
+  <div class="div-as-inline">div #2</div>
+  <div class="div-as-inline">div #3</div>
+</body>
+</html>

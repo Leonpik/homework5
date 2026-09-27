@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3a. normalize.css</title>
+  <link id="normalize-link" rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles-page3-normalize.css">
+</head>
+<body>
+  <h1>Task 3a. Page with normalize.css</h1>
+
+  <div class="toggle-bar">
+    <label>
+      <input type="checkbox" id="toggle" checked>
+      normalize.css enabled (uncheck to see the "before" style)
+    </label>
+  </div>
+
+  <div class="content-demo">
+    <h1>Heading h1</h1>
+    <p>A regular paragraph of text with a <a href="#">link</a> and a <b>bold</b> word.</p>
+    <hr>
+    <button>Button</button>
+    <input type="text" placeholder="Input field">
+    <table border="1">
+      <tr><th>Column 1</th><th>Column 2</th></tr>
+      <tr><td>Data</td><td>Data</td></tr>
+    </table>
+  </div>
+
+  <p class="description">
+    Experiment description: without normalize.css, every browser sets its own
+    default spacing for headings, font size for inputs and buttons, image borders,
+    and table borders. After including normalize.css these small differences
+    disappear: the h1 heading gets a consistent margin, the button and input
+    inherit the page font instead of the system font, and the table uses
+    border-collapse. Unlike reset.css, normalize.css does not remove styles
+    completely; it only aligns them across browsers, so text and lists still
+    look "normal", just consistent between Chrome, Firefox, and others.
+  </p>
+
+  <script>
+    const link = document.getElementById('normalize-link');
+    document.getElementById('toggle').addEventListener('change', function () {
+      link.disabled = !this.checked;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; line-height: 1.5; }
+h1 { font-size: 22px; }
+h2 { font-size: 18px; margin-top: 40px; }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #0b57d0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.float-left { float: left; }
+
+.float-right { float: right; background: #d93025; }
+
+.float-demo {
+  border: 1px dashed #999;
+  padding: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clear-block {
+  clear: both;
+  background: #fef7e0;
+  border: 1px solid #f9ab00;
+  padding: 8px;
+  margin-top: 10px;
+}

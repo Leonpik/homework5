@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework part 5</title>
+  <link rel="stylesheet" href="styles-page5.css">
+</head>
+<body>
+  <h1>Task 5. float and clear</h1>
+
+  <h2>float without clear (container collapses)</h2>
+  <div class="float-demo">
+    <div class="box float-left">float</div>
+    <div class="box float-right">float</div>
+    <p>The text wraps around both floated boxes — one on the left, one on the
+       right. But the gray container around them does not "see" the height of
+       these boxes and can appear collapsed if there is no other content after them.</p>
+  </div>
+
+  <h2>float + clearfix</h2>
+  <div class="float-demo clearfix">
+    <div class="box float-left">float</div>
+    <div class="box float-right">float</div>
+  </div>
+  <p>Now the container has a <code>clearfix</code> class — the <code>::after</code>
+     pseudo-element with <code>clear: both</code> "closes" the float, and the
+     container no longer collapses.</p>
+
+  <h2>clear: both on a separate element</h2>
+  <div class="float-demo">
+    <div class="box float-left">float</div>
+    <div class="box float-right">float</div>
+    <div class="clear-block">This block has clear: both, so it starts on a new
+      line below both floated elements instead of wrapping around them.</div>
+  </div>
+</body>
+</html>

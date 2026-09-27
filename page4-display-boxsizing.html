@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework part 4</title>
+  <link rel="stylesheet" href="styles-page4.css">
+</head>
+<body>
+  <h1>Task 4. The display Property and box-sizing</h1>
+
+  <h2>display: block</h2>
+  <div class="display-block">
+    <div class="item">Block 1</div>
+    <div class="item">Block 2</div>
+    <div class="item">Block 3</div>
+  </div>
+
+  <h2>display: inline</h2>
+  <div class="display-inline">
+    <div class="item">Inline 1</div>
+    <div class="item">Inline 2</div>
+    <div class="item">Inline 3</div>
+  </div>
+
+  <h2>display: flex</h2>
+  <div class="display-flex">
+    <div class="item">Flex 1</div>
+    <div class="item">Flex 2</div>
+    <div class="item">Flex 3</div>
+  </div>
+
+  <h2>box-sizing</h2>
+  <p>Both boxes below have <code>width: 200px</code>, <code>padding: 20px</code>
+     and <code>border: 5px</code>, but their actual rendered width differs.</p>
+
+  <div class="box-content">content-box: actual width = 200 + 2x20 + 2x5 = 250px</div>
+  <div class="box-border">border-box: actual width stays = 200px (padding and border "eat into" the content)</div>
+</body>
+</html>
