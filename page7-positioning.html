@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework part 7</title>
+  <link rel="stylesheet" href="styles-page7.css">
+</head>
+<body>
+  <a href="index.html">&larr; Back to menu</a>
+  <h1>Task 7. Positioning Elements</h1>
+
+  <h2>position: static</h2>
+  <div class="box pos-static">static</div>
+  <p>The default value — the element sits in the normal document flow, and the
+     <code>top</code>/<code>left</code> properties have no effect on it.</p>
+
+  <h2>position: relative</h2>
+  <div class="relative-demo">
+    <div class="box pos-relative">relative</div>
+  </div>
+  <p>The box is shifted by <code>top: 15px; left: 30px</code> relative to its
+     original position, but the space it would have occupied is still
+     "reserved" (the dashed border stays the same size).</p>
+
+  <h2>position: absolute</h2>
+  <div class="absolute-parent">
+    <div class="box pos-absolute">absolute</div>
+  </div>
+  <p>The box left the normal flow and anchored itself to the top-right corner
+     of its parent element with <code>position: relative</code> (the red border),
+     instead of the whole page.</p>
+
+  <h2>position: fixed vs position: sticky</h2>
+  <p>The yellow box in the bottom-right corner of the screen has
+     <code>position: fixed</code> — scroll the page down, and it will always
+     stay in the same place relative to the browser window, regardless of scrolling.</p>
+  <div class="box pos-fixed">fixed</div>
+
+  <p>The purple box below has <code>position: sticky</code>. It "sticks" to the
+     top only within its own container — scroll the gray container down, and the
+     purple box will stop near the top of the container instead of moving with
+     the whole page like fixed does.</p>
+  <div class="sticky-parent">
+    <div class="box pos-sticky">sticky</div>
+    <div class="filler">Content 1</div>
+    <div class="filler">Content 2</div>
+    <div class="filler">Content 3</div>
+    <div class="filler">Content 4</div>
+  </div>
+
+  <h2>fixed vs sticky in short</h2>
+  <p><b>fixed</b> is always anchored to the browser window, ignoring any
+     scrolling and any parent. <b>sticky</b> behaves like a normal element
+     until scrolling reaches the given <code>top</code>, and then it "sticks",
+     but only within its nearest scrollable or height-limited container; once
+     it moves past that container, the sticky element scrolls along with it.</p>
+
+  <div class="filler">Extra content at the bottom of the page so you can
+    scroll and see the fixed box in action.</div>
+  <div class="filler">More content.</div>
+</body>
+</html>

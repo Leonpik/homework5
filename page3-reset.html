@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework part 3</title>
+  <link id="reset-link" rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles-page3-reset.css">
+</head>
+<body>
+  <a href="index.html">&larr; Back to menu</a>
+  <h1>Task 3b. Page with reset.css</h1>
+
+  <div class="toggle-bar">
+    <label>
+      <input type="checkbox" id="toggle" checked>
+      reset.css enabled (uncheck to see the "before" style)
+    </label>
+  </div>
+
+  <div class="content-demo">
+    <h1>Heading h1</h1>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+    </ul>
+    <blockquote>This is a quote with default quotation marks</blockquote>
+    <p>A paragraph with a <a href="#">link</a>.</p>
+    <table border="1">
+      <tr><th>Column 1</th><th>Column 2</th></tr>
+      <tr><td>Data</td><td>Data</td></tr>
+    </table>
+  </div>
+
+  <p class="description">
+    Experiment description: before including reset.css, the h1 heading has a large
+    bold font and its own margin, the list shows bullet markers and left indent,
+    the quote is wrapped in quotation marks, and the link is underlined and blue.
+    After including reset.css, all these elements are "stripped bare": the heading
+    becomes plain text with no bold weight or margin, list markers disappear, the
+    quotation marks are removed, and the link loses its underline and color. This
+    is a much harsher reset than normalize.css: reset.css does not align browser
+    styles, it removes them almost entirely, so afterwards you have to rebuild
+    the appearance of every element from scratch.
+  </p>
+
+  <script>
+    const link = document.getElementById('reset-link');
+    document.getElementById('toggle').addEventListener('change', function () {
+      link.disabled = !this.checked;
+    });
+  </script>
+</body>
+</html>

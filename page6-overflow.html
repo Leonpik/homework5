@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework part 6</title>
+  <link rel="stylesheet" href="styles-page6.css">
+</head>
+<body>
+  <a href="index.html">&larr; Back to menu</a>
+  <h1>Task 6. The overflow Property</h1>
+  <p>All the containers below have the same text, longer than the box size
+     (<code>width: 250px; height: 100px</code>), but the behavior differs.</p>
+
+  <h2>overflow: visible (default value)</h2>
+  <div class="container overflow-visible">
+    Text that doesn't fit simply spills outside the container and overlaps
+    neighboring content, while the container's own size stays unchanged.
+  </div>
+
+  <h2>overflow: hidden</h2>
+  <div class="container overflow-hidden">
+    Text that doesn't fit is clipped and fully hidden — no scrollbar appears,
+    and there is no way to see the extra text.
+  </div>
+
+  <h2>overflow: scroll</h2>
+  <div class="container overflow-scroll">
+    Scrollbars always appear, even if the content actually fits completely —
+    both horizontally and vertically.
+  </div>
+
+  <h2>overflow: auto</h2>
+  <div class="container overflow-auto">
+    A scrollbar appears only when the content actually doesn't fit in the box —
+    this is the most "smart" option of the four.
+  </div>
+</body>
+</html>
